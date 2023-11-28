@@ -69,13 +69,11 @@
 
 .custom-field input[type="password"] {
   border-top: 3px solid #ddd;
-  border-width: 85%;
   padding-bottom: 25px;
 }
 
 .custom-field input[type="text"] {
   border-bottom: 3px solid #ddd;
-  border-width: 85%;
   padding-bottom: 25px;
 }
 
@@ -109,5 +107,4 @@
 
 .custom-field input:focus {
   outline: none;
-  border-color: none;
 }
