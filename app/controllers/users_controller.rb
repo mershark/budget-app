@@ -8,9 +8,9 @@ class UsersController < ApplicationController
     user.name = params[:user][:name]
 
     if user.save
-      # Add any additional logic you need after a successful save
+      redirect_to root_path, notice: 'User successfully created!'
     else
-      # Add logic for handling save failure, if needed
+      render :new
     end
   end
 
