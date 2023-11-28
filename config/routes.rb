@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  devise_for :users, controllers: {
+    registrations: 'users/registrations'
+  }
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :users, only: [:index, :create]
+  resources :groups, only: [:index, :new, :create]
+  resources :entities, only: [:index, :new, :create]
+  post '/associations/:group_id/:entity_id', to: 'associations#create', as: :create_association
+
+  root to: "splash#index"
 end

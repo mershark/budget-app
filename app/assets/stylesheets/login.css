@@ -1,0 +1,110 @@
+.device-links {
+  margin-top: 15px;
+  background-color: #f5f4f4;
+}
+
+/* navbar */
+.left-arrow-link {
+  text-decoration: none;
+  background-color: #3778c2;
+}
+
+.nav {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  align-items: center;
+  color: white;
+  font-size: 19px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#signup-next-btn {
+  cursor: pointer;
+}
+
+.background {
+  background-color: #3778c2;
+}
+
+#login-link {
+  cursor: pointer;
+}
+
+/* other */
+
+.login-screen {
+  text-align: center;
+  padding-top: 1%;
+  background-color: #f5f4f4;
+}
+
+.custom-login-form {
+  background: white;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.custom-field label {
+  font-size: 14px;
+  color: #ddd;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.custom-field input[type="email"],
+.custom-field input[type="password"],
+.custom-field input[type="text"] {
+  width: 100%;
+  padding: 18px;
+  border: none;
+  background-color: #fff;
+  font-size: 15px;
+}
+
+.custom-field input[type="password"] {
+  border-top: 3px solid #ddd;
+  padding-bottom: 25px;
+}
+
+.custom-field input[type="text"] {
+  border-bottom: 3px solid #ddd;
+  padding-bottom: 25px;
+}
+
+.custom-login-button {
+  font-size: 16px;
+  padding: 10px;
+  background-color: #3778c2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custom-login-button:hover {
+  background-color: #5fb523;
+}
+
+.custom-actions {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.links-check {
+  text-align: center;
+}
+
+.forget-password {
+  text-decoration: none;
+  color: #434b54;
+}
+
+.custom-field input:focus {
+  outline: none;
+}
