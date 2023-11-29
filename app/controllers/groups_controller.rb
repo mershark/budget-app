@@ -1,6 +1,14 @@
 class GroupsController < ApplicationController
+  before_action :authenticate_user!
+
   def index
-    # Your code for the index action goes here
+    @groups = current_user.groups.includes(:icon_attachment)
+  end
+
+  def show
+    @group = current_user.groups.find(params[:id])
+    @entities = @group.entities.order(created_at: :desc)
+    @total_amount = @entities.sum(:amount)
   end
 
   def new
@@ -8,10 +16,13 @@ class GroupsController < ApplicationController
   end
 
   def create
-    @group = Group.new(group_params)
+    @group = current_user.groups.build(group_params)
 
     if @group.save
-      redirect_to groups_path, notice: 'Group successfully created!'
+      # Create join record
+      GroupUser.create(user: current_user, group: @group)
+
+      redirect_to groups_path, notice: 'Category created!'
     else
       render :new
     end

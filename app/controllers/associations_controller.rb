@@ -5,6 +5,6 @@ class AssociationsController < ApplicationController
 
     group.entities << entity
 
-    redirect_to groups_path, notice: 'Entity associated with the group!'
+    redirect_to groups_path, notice: 'Transaction added to the Category!'
   end
 end
