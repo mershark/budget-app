@@ -1,12 +1,17 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: {
-    registrations: 'users/registrations'
-  }
+  devise_for :users, controllers: { registrations: 'users/registrations'} do      
+    root to: "groups#index"
+  end
 
   resources :users, only: [:index, :create]
-  resources :groups, only: [:index, :new, :create]
-  resources :entities, only: [:index, :new, :create]
-  post '/associations/:group_id/:entity_id', to: 'associations#create', as: :create_association
+
+  resources :groups, only: [:index, :show, :new, :create] do
+    resources :entities, only: [:index, :new, :create]
+  end
+
+  authenticated :user do
+    root to: 'groups#index', as: :authenticated_root
+  end
 
   root to: "splash#index"
 end
