@@ -14,7 +14,6 @@ class EntitiesController < ApplicationController
     @entity = Entity.new(entity_params.merge(user: current_user))
     @entity.group_ids = params[:entity][:group_ids]
 
-
     if @entity.save
       redirect_to group_entities_path(@entity.groups.first), notice: 'Transaction successfully created!'
     else
