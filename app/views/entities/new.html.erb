@@ -44,10 +44,8 @@
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('next-btn').addEventListener('click', function() {
-      // Trigger the form submission when "Next" is clicked
-      document.getElementById('save-btn').click();
-    });
-  });
+document.getElementById('next-btn').addEventListener('click', function() {
+  document.getElementById('save-btn').click();
+  Turbolinks.visit(window.location.toString());
+});
 </script>
