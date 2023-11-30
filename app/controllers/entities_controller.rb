@@ -3,7 +3,7 @@ class EntitiesController < ApplicationController
   before_action :set_group, only: %i[index new create]
 
   def index
-    @entities = @group.entities
+    @entities = @group.entities.order(created_at: :desc)
   end
 
   def new
