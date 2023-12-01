@@ -137,7 +137,7 @@ To run tests, run the following command:
 ### Live demo & video presentation
 
   - [Live demo](https://budgetapp-6wbs.onrender.com)
-  - [Video presentation]()
+  - [Video presentation](https://drive.google.com/file/d/1zN9kYZCiQiNwnIifDogNOqC2eZsW55uW/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,6 +185,7 @@ If you like this project please show support by staring ⭐️.
 - Thanks to the Microverse team for the great curriculum.
 - Thanks to the Code Reviewer(s) for the insightful feedback.
 - Thanks to our coding partners, the morning session team, and the standup team for their cooperation.
+- Thanks to Gregoire Vella, creator of the [design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=) for this app on Behance.
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
