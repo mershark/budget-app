@@ -30,7 +30,7 @@
       </div>
 
       <div class="custom-fieldss">
-        <%= form.label :group_ids, "Select Category", class: "formlabel" %>
+        <%= form.label :group_ids, "Choose Category", class: "formlabel" %>
         <%= form.collection_select(:group_ids, current_user.groups, :id, :name, { selected: @entity.group_ids, multiple: true, required: true }) %>
       </div>
 
