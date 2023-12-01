@@ -18,7 +18,7 @@ RSpec.feature 'Entities New', type: :feature do
 
     within 'form' do
       expect(page).to have_selector('.custom-fieldsss', count: 2)
-      expect(page).to have_selector('.custom-fieldss', text: 'Select Category')
+      expect(page).to have_selector('.custom-fieldss', text: 'Choose Category')
       expect(page).to have_selector('button#next-btn-submit', text: 'Next', visible: :hidden)
     end
 

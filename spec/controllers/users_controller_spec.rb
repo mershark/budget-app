@@ -4,20 +4,28 @@ RSpec.describe UsersController, type: :controller do
   include Devise::Test::ControllerHelpers
 
   describe 'GET #index' do
-    it 'returns a successful response' do
-      get :index
-      expect(response).to be_successful
-    end
+    context 'when user is signed in' do
+      let(:user) { create(:user) }
 
-    it 'assigns all groups to @groups' do
-      group = create(:group)
-      get :index
-      expect(assigns(:groups)).to eq([group])
-    end
+      before do
+        sign_in user
+      end
 
-    it 'renders the index template' do
-      get :index
-      expect(response).to render_template('groups/index')
+      it 'returns a successful response' do
+        get :index
+        expect(response).to be_successful
+      end
+
+      it 'assigns the user\'s groups to @groups' do
+        group = create(:group)
+        get :index
+        expect(assigns(:groups)).to eq([])
+      end
+
+      it 'renders the index template' do
+        get :index
+        expect(response).to render_template('groups/index')
+      end
     end
   end
 

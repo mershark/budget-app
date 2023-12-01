@@ -10,13 +10,13 @@ FactoryBot.define do
 
   factory :group do
     name { Faker::Company.name }
+  end
 
-    factory :group_with_user do
-      transient { user { create(:user) } }
+  factory :group_with_user, parent: :group do
+    transient { user { create(:user) } }
 
-      after(:create) do |group, evaluator|
-        create(:group_user, group:, user: evaluator.user)
-      end
+    after(:create) do |group, evaluator|
+      create(:group_user, group: group, user: evaluator.user)
     end
   end
 
@@ -32,7 +32,7 @@ FactoryBot.define do
 
     factory :entity_with_group_user, parent: :entity do
       after(:create) do |entity|
-        entity.groups << create(:group)
+        entity.groups << create(:group_with_user).group
       end
     end
   end
