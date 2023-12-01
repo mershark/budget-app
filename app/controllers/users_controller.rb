@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @groups = Group.all
+    @groups = current_user.groups
     render 'groups/index'
   end
 
