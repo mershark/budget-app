@@ -17,7 +17,7 @@ RSpec.describe UsersController, type: :controller do
       end
 
       it 'assigns the user\'s groups to @groups' do
-        group = create(:group)
+        create(:group)
         get :index
         expect(assigns(:groups)).to eq([])
       end

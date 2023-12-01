@@ -16,7 +16,7 @@ FactoryBot.define do
     transient { user { create(:user) } }
 
     after(:create) do |group, evaluator|
-      create(:group_user, group: group, user: evaluator.user)
+      create(:group_user, group:, user: evaluator.user)
     end
   end
 
