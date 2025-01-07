@@ -181,10 +181,6 @@ If you like this project please show support by staring ⭐️.
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-- Thanks to the Microverse team for the great curriculum.
-- Thanks to the Code Reviewer(s) for the insightful feedback.
-- Thanks to our coding partners, the morning session team, and the standup team for their cooperation.
 - Thanks to Gregoire Vella, creator of the [design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=) for this app on Behance.
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
