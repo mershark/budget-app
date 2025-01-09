@@ -137,7 +137,7 @@ To run tests, run the following command:
 ### Live demo & video presentation
 
   - [Live demo](https://budgetapp-6wbs.onrender.com)
-  - [Video presentation](https://drive.google.com/file/d/1zN9kYZCiQiNwnIifDogNOqC2eZsW55uW/view?usp=sharing)
+  - [Video presentation](https://drive.google.com/file/d/1yJOEfMMBY9HIM5DQVU-6uhdiMOGS8AKf/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
